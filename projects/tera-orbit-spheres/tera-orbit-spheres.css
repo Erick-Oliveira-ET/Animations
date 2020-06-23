@@ -1,0 +1,232 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: black;
+    animation: initializeBody 6s linear
+}
+#particles{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: 8s;
+    animation: particles 8s linear 
+}
+.center{ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: transparent;
+
+}
+.center .tera{
+    /* color: white;
+    font-family: Arial;
+    text-align: center;
+    font-size: large;
+    letter-spacing: 5px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: transparent;
+    /* box-shadow: 0 0 15px white,
+                0 0 30px white,
+                0 0 60px white,
+                0 0 10px white; */
+}
+.center .tera .sphere1{
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 50%;
+    width: 0px;
+    height: 2px;
+    background: transparent;
+    transform-origin: left;
+    animation: initialize 3s linear, rotate 1s linear 3 
+}
+.center .tera .sphere1:before{
+    content: '';
+    position: absolute;
+    top: -12px;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: none;
+    animation: initializeSphereAttrbutes 3s linear;
+
+}
+.center .tera .sphere2{
+    position: absolute;
+    top: calc(50% - 1px);
+    right: 50%;
+    width: 0px;
+    height: 2px;
+    background: transparent;
+    transform-origin: right;
+    animation: initialize 3s linear, rotate 1s linear 3 
+}
+.center .tera .sphere2:before{
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: none;
+    animation: initializeSphereAttrbutes 3s linear;
+}
+.center .tera .logo{
+    
+    content: url('rounded.png');
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: black;
+    /* box-shadow: 0 0 15px rgba(255, 255, 255, 0.11),
+                0 0 30px rgba(255, 255, 255, 0.11),
+                0 0 60px black,
+                0 0 10px black; */
+
+    animation: initializeMiddle 6s linear;
+
+}
+.center .tera .logo:before{
+    content: url('rounded.png');
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: none;
+                
+    animation: initializeMiddle 6s linear;
+
+}
+.pulse:before, .pulse:after{
+    content: '';
+    display: block;
+    position: absolute;
+    border: 50%;
+    border: 1px solid white;
+    left: -20px;
+    right: -20px;
+    top: -20px;
+    bottom: -20px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px white,
+                0 0 30px white,
+                0 0 60px white,
+                0 0 10px white;
+    opacity: 0;
+    animation: expansion 1.5s 3s linear infinite;
+
+}
+
+@keyframes initialize {
+    0%{
+        width: 500px;
+    }
+    100%{
+        width: 10px;
+
+    }
+}
+
+@keyframes initializeMiddle{
+    0%{
+        width: 0px;
+        height: 0px;
+        border-radius: 50%;
+        content: '';
+    }
+    55%{
+        width: 0px;
+        height: 0px;
+        border-radius: 50%;
+    }
+    58%{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+    100%{
+        content: url('rounded.png');
+    }
+}
+
+@keyframes initializeBody{
+    0%{
+        background: black;
+    }
+
+    45%{
+        background: black;
+    }
+    50% {
+        background: white;
+    }
+    70% {
+        background: black;
+    }
+    100%{
+        background: black;
+    }
+}
+
+@keyframes initializeSphereAttrbutes{
+    0%{
+        background: white;
+        box-shadow: 0 0 15px white,
+        0 0 30px white,
+        0 0 60px white,
+        0 0 10px white;
+
+
+    }
+    100%{
+        background: white;
+        box-shadow: 0 0 15px white,
+        0 0 30px white,
+        0 0 60px white,
+        0 0 10px white;
+    }
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes expansion{
+    0%{
+        transform: scale(0.5);
+        opacity: 0;
+
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
