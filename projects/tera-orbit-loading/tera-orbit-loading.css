@@ -6,13 +6,18 @@ body{
 }
 
 h1{
+    font-family: Arial;
     position: absolute;
     top: 49%;
-    left:52%; 
+    left:51%; 
     transform: translate(-50%, -50%);
     margin: 0;
     padding: 0;
     display: flex;
+    text-shadow: 0 0 5px white,
+                0 0 25px white,
+                0 0 50px white,
+                0 0 200px white;
 }
 
 ul{
@@ -23,6 +28,7 @@ ul{
     margin: 0;
     padding: 0;
     display: flex;
+    animation: orbit 2s linear infinite;
 }
 
 ul li{
@@ -31,6 +37,10 @@ ul li{
     height: 10px;
     border-radius: 50%;
     background: white;
+    box-shadow: 0 0 5px white,
+                0 0 25px white,
+                0 0 50px white,
+                0 0 200px white;
 }
 
 li:nth-child(0){
@@ -39,10 +49,7 @@ li:nth-child(0){
 li:nth-child(1){
     margin-top: 100px;
 }
-ul{
-    animation: orbit 2s linear infinite;
-    
-}
+
 
 @keyframes orbit{
     0%{
