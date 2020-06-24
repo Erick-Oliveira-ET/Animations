@@ -5,12 +5,13 @@ body{
 }
 
 .search-box{
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: white;
     height: 40px;
+    width: fit-content;
     border-radius: 40px;
     padding: 10px;
 }
@@ -32,6 +33,8 @@ body{
 .search-box:hover > .search-btn{
     color: white;
 }
+
+
 
 
 .search-txt{
