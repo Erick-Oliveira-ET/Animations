@@ -25,13 +25,13 @@ The 12 columns bootstrap grid format.
 ## [Flip Card Hover](https://erick-oliveira-et.github.io/Animations/projects/flip-card-hover/flip-card-hover.html)
 It's a image that when it's hovered it flips and have a text behind.
 
-## [Card plus](https://erick-oliveira-et.github.io/Animations/projects/projects/card-plus/card-plus.html)
+## [Card plus](https://erick-oliveira-et.github.io/Animations/projects/card-plus/card-plus.html)
 An animamtion of a plus button spinning when hovered.
 
-## [Tera Orbit Loading](https://erick-oliveira-et.github.io/Animations/projects/projects/tera-orbit-loading/tera-orbit-loading.html)
+## [Tera Orbit Loading](https://erick-oliveira-et.github.io/Animations/projects/tera-orbit-loading/tera-orbit-loading.html)
 An loading animation of two orbits coliding, generating an explosion em pulsing. 
 
-## [Tera Orbiting](https://erick-oliveira-et.github.io/Animations/projects/projects/tera-orbit-spheres/tera-orbit-spheres.html)
+## [Tera Orbiting](https://erick-oliveira-et.github.io/Animations/projects/tera-orbit-spheres/tera-orbit-spheres.html)
 Two spheres orbiting a word. This project uses particles.js to make the stars.
 
 
