@@ -29,9 +29,10 @@ It's a image that when it's hovered it flips and have a text behind.
 An animamtion of a plus button spinning when hovered.
 
 ## [Tera Orbit Loading](https://erick-oliveira-et.github.io/Animations/projects/tera-orbit-loading/tera-orbit-loading.html)
-An loading animation of two orbits coliding, generating an explosion em pulsing. 
+Two spheres orbiting a word. This project uses particles.js to make the stars. 
 
 ## [Tera Orbiting](https://erick-oliveira-et.github.io/Animations/projects/tera-orbit-spheres/tera-orbit-spheres.html)
-Two spheres orbiting a word. This project uses particles.js to make the stars.
+An loading animation of two orbits coliding, generating an explosion em pulsing. 
+
 
 
