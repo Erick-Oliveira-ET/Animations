@@ -1,0 +1,36 @@
+.blue {
+    background-color: aqua;
+
+}
+
+.parent {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box{
+    /* flex: 1 1 300px; Scretching */
+    flex: 0 1 150px; /*No Scretching*/
+    margin: 10px;
+    border-radius: 20px;
+
+    padding: 0px 50px 0px 50px;
+
+    display: flex;
+    background-color: coral;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 5rem;
+    
+    border: 4px black;
+    border-style: solid;
+
+}
