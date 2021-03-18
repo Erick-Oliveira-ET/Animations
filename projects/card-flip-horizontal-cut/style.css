@@ -23,7 +23,7 @@ body {
   --flip-color: #171717;
   --flip-text-color: #efefef;
   --flip-border-radius: calc(var(--flip-height) * 0.05);
-  --animation-time: 0.8s;
+  --animation-time: 1s;
   --animation-ease: linear;
   --perspective: 200px;
 }
@@ -67,7 +67,7 @@ body {
 }
 
 .flip-display-bottom {
-  --i: 2;
+  --i: -2;
 
   border-bottom-left-radius: var(--flip-border-radius);
   border-bottom-right-radius: var(--flip-border-radius);
@@ -104,12 +104,15 @@ body {
   --i: 2;
   transform: rotateX(0deg);
 
+  transform-origin: bottom;
+  top: 0;
+
   border-top-left-radius: var(--flip-border-radius);
   border-top-right-radius: var(--flip-border-radius);
 }
 
 .flipper-bottom {
-  --i: 2;
+  --i: -2;
 
   transform: rotateX(90deg);
 
@@ -125,7 +128,7 @@ body {
     infinite;
 }
 
-.flip-card.play .flipper-top {
+.flip-card.play .flipper-bottom {
   animation: flipperBottomAnimation var(--animation-ease) var(--animation-time)
     infinite;
 }
